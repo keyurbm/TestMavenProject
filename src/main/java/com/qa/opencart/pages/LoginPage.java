@@ -59,16 +59,14 @@ public class LoginPage {
 		return new AccountsPage(driver);
 	}
 	
-	public RegistrationPage navigateToRegisterPage() {
-		elementUtil.doClick(registerLink);
-		return new RegistrationPage(driver);
-	}
-
-	public boolean doLoginWrongData(String un, String pwd) {
-		elementUtil.doSendKeys(username, un);
-		elementUtil.doSendKeys(password, pwd);
-		elementUtil.doClick(loginButton);
-		return elementUtil.doIsDisplayed(loginErrorMessg);
-	}
+	/*
+	 * public RegistrationPage navigateToRegisterPage() {
+	 * elementUtil.doClick(registerLink); return new RegistrationPage(driver); }
+	 * 
+	 * public boolean doLoginWrongData(String un, String pwd) {
+	 * elementUtil.doSendKeys(username, un); elementUtil.doSendKeys(password, pwd);
+	 * elementUtil.doClick(loginButton); return
+	 * elementUtil.doIsDisplayed(loginErrorMessg); }
+	 */
 
 }
