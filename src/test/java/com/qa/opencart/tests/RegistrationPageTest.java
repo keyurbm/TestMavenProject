@@ -13,10 +13,10 @@ import com.qa.opencart.utils.ExcelUtil;
 
 public class RegistrationPageTest extends BaseTest{
 	
-	@BeforeClass
-	public void setupRegister() {
-		registrationPage = loginPage.navigateToRegisterPage();
-	}
+//	@BeforeClass
+//	public void setupRegister() {
+//		registrationPage = loginPage.navigateToRegisterPage();
+//	}
 	
 	@DataProvider
 	public Object[][] getRegisterData() {
